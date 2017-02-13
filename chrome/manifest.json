@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Staffs Web Meetup Checker",
+  "short_name": "SWM",
+  "description": "Check when the next Staffs Web Meetup is",
+  "author": "Dan Bovey",
+  "version": "1.0.0",
+
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "https://api.meetup.com/*" 
+  ],
+  "content_security_policy":"script-src 'self' https://api.meetup.com; object-src 'self'",
+  "web_accessible_resources": [
+    "oauth.html"
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

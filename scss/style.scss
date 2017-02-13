@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 400px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    padding-bottom: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background: #E32EA3;
+    text-align: center;
+    color: #FFF;
+
+    img {
+        display: block;
+        max-width: 100px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 0.5em 0;
+        font-size: 16px;
+    }
+}
+
+#content {
+    padding: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #ED1C40;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn--oauth {
+    display: block;
+    margin: 30px auto;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+.icon {
+    float: left;
+    background: url('../img/icons.png');
+    width: 35px;
+    height: 35px;
+
+    &.icon__clock {
+        background-position: -1px -1px;
+    }
+    &.icon__venue {
+        background-position: -1px -38px;
+    }
+    &.icon__ticket {
+        background-position: -1px -75px;
+    }
+}
+
+.event__meta {
+    margin-bottom: 20px;
+
+    div {
+        float: left;
+        padding-left: 12px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+
+        a {
+            color: #E32FA2;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: #272727;
+    }
+
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
